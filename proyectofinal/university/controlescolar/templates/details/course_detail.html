@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+ <article class="course">
+	<header>
+		<h2>Titulo: {{ course.title }}</h2>
+	</header>
+    <p>ID de curso: {{course.course_id}}</p>
+	<p>Departamento: {{course.dept_name}}</p>
+    <p>Creditos: {{course.credits}}</p>
+
+    <br>
+    <a href="{% url 'courses' %}">Volver a cursos</a>
+</article>
+
+{%endblock content%}

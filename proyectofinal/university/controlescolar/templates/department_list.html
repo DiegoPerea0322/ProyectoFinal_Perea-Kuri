@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="center">
+	<h2>Departamentos</h2>
+	{% if departments %}
+	<ul class="departments">
+		{% for department in departments %}
+			<li><a href="{% url 'department' department.dept_name %}">{{ department.dept_name }}</a>
+				 <div  class="task-controls">
+				 	<a href="#"><i class="bi bi-trash"></i> </a>
+					<a href="{% url 'dept-update' department.dept_name %}">Modificar</a>
+		         </div>
+		    </li>
+		{% endfor %}
+	{% else %}
+		<p>No hay departamentos registrados</p>
+	{% endif %}
+	</ul>
+    <a href="{% url 'dashboard' %}">Volver al panel</a>
+</div>
+{%endblock content%}

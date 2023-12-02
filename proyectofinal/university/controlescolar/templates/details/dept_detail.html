@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+ <article class="department">
+	<header>
+		<h2>Nombre: {{ department.dept_name }}</h2>
+	</header>
+	<p>Edificio: {{department.building}}</p>
+    <p>Presupuesto: {{department.budget}}</p>
+
+    <br>
+    <a href="{% url 'departments' %}">Volver a departamentos</a>
+
+</article>
+
+{%endblock content%}

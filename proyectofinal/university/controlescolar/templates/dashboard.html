@@ -1,0 +1,14 @@
+<!--users/templates/users/dashboard.html-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+Bienvenido, {{ user.username|default:'Guest' }}!<br><br>
+
+    <a href="{% url 'courses' %}">Editar cursos</a><br>
+    <a href="{% url 'departments' %}">Editar departamentos</a><br>
+    <a href="{% url 'teachers' %}">Editar profesores</a><br><br><br>
+
+    <a href="{% url 'logout' %}">Logout</a>
+
+{% endblock %}

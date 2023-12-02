@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="center">
+	<h2>Profesores</h2>
+	{% if teachers %}
+	<ul class="teachers">
+		{% for teacher in teachers %}
+			<li><a href="{% url 'teacher' teacher.id %}">{{ teacher.name }}</a>
+				 <div  class="task-controls">
+                    <a href="{% url 'teacher-update' teacher.id %}">Modificar</a>
+                 </div>
+		    </li>
+		{% endfor %}
+	{% else %}
+		<p>No hay registro de Profesores</p>
+	{% endif %}
+	</ul>
+    <a href="{% url 'dashboard' %}">Volver al panel</a>
+</div>
+{%endblock content%}

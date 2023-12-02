@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+ <article class="teacher">
+	<header>
+		<h2>Profesor: {{ teacher.name }}</h2>
+	</header>
+	<p>ID: {{teacher.id}}</p>
+ 	<p>Departamento: {{teacher.dept_name}}</p>
+	<p>Salario: {{teacher.salary}}</p>
+
+    <br>
+    <a href="{% url 'teachers' %}">Volver a profesores</a>
+
+</article>
+
+{%endblock content%}

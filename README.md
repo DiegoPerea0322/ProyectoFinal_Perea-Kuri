@@ -5,7 +5,7 @@
   ## Members
  - Diego Perea
  - Javier Kuri
- ## Technical Requierements
+ ## Technical Requirements
  Django 4.2.7, Laragon 6.0 with MySQL 8.0 are required, otherwise the project will not work due to a version discrepancy.
 
 

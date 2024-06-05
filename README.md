@@ -1,3 +1,12 @@
+# Final Project 
+  Subject:  Software Engineering
+  Development of a School Managment System Using Django and Laragon.
+  ## Members
+ - Diego Perea
+ - Javier Kuri
+ ## Technical Requierements
+ Django 4.2.7, Laragon 6.0 with MySQL 8.0 are required, otherwise the project will not work due to a version discrepancy.
+ 
 # ProyectoFinal_Perea-Kuri
 Proyecto final de ingenieria de software
 
